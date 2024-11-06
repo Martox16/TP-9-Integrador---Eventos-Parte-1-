@@ -1,6 +1,7 @@
 // app/components/registro/RegistroForm/index.js
 "use client";
 import React, { useState } from 'react';
+import Link from 'next/link';  // Importa Link de Next.js
 import styles from './registroForm.module.css';
 
 const RegistroForm = () => {
@@ -34,6 +35,11 @@ const RegistroForm = () => {
         <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
       </div>
       <button type="submit" className={styles['registro-button']}>Registrar</button>
+      
+      {/* Enlace para ir a la página de login */}
+      <p className={styles['login-link']}>
+        ¿Ya tienes una cuenta? <Link href="/view/login">Inicia sesión</Link>
+      </p>
     </form>
   );
 };

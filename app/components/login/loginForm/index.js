@@ -1,12 +1,13 @@
-// app/components/login/LoginForm/index.js
 "use client";
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation'; // Importar useRouter para redirigir
 import styles from './loginForm.module.css';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const router = useRouter(); // Hook para acceder al router de Next.js
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,6 +15,8 @@ const LoginForm = () => {
 
     if (storedUser && storedUser.email === email && storedUser.password === password) {
       alert('Inicio de sesión exitoso!');
+      // Redirigir a la página de listado de eventos
+      router.push('/view/listadoDeEventos'); 
     } else {
       setError('Credenciales incorrectas.');
     }

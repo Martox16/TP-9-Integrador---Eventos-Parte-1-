@@ -1,5 +1,13 @@
 /* view/registro/registro.module.css */
-
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
 .registro-container {
     display: flex;
     flex-direction: column;
