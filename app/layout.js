@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
             </nav>
           </header>
           <main>{children}</main>
-          <footer className={styles.footer}>© 2024 Mi Sitio Web</footer> {/* Cambié el selector global a la clase */}
+          <footer className={styles.footer}>© Sitio De Eventos</footer> {/* Cambié el selector global a la clase */}
         </div>
       </body>
     </html>

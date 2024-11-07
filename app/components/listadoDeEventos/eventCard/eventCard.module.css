@@ -1,29 +1,5 @@
-/* listadoDeEventos.module.css */
+/* components/listadoDeEventos/eventCard/eventCard.module.css */
 
-/* Contenedor principal de la página */
-.container {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Título de la página */
-.title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-/* Contenedor de las tarjetas (EventCards) */
-.eventsList {
-  display: flex;
-  flex-wrap: wrap; /* Las tarjetas se ajustan a nuevas filas cuando no caben */
-  gap: 20px; /* Espacio entre las tarjetas */
-  justify-content: center; /* Centra las tarjetas dentro del contenedor */
-}
-
-/* Estilo individual de las tarjetas (EventCards) */
 .card {
   background-color: #fff;
   border: 1px solid #ddd;
